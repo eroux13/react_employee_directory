@@ -1,25 +1,12 @@
-import logo from './logo.svg';
+// Import React
+import React from "react";
+// Import Container component
+import EmployeeContainer from "./components/EmployeeContainer/EmployeeContainer"
+// Import styling for App.js
 import './App.css';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  return <EmployeeContainer />
 }
 
 export default App;
