@@ -14,6 +14,9 @@ import {Table} from "react-bootstrap";
 import API from "../../utils/API";
 // Import Button Component from react bootstrap
 import {Button} from 'react-bootstrap';
+// Import Icons from FontAwesome to sort names
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faSort } from '@fortawesome/free-solid-svg-icons'
 
 class EmployeeContainer extends Component {
     state = {
@@ -56,6 +59,60 @@ class EmployeeContainer extends Component {
         });
     };
 
+    sortFirst = (event) => {
+        event.preventDefault();
+        let results = this.state.employeeList.sort((a, b) => {
+            let nameA = a.name.first.toLowerCase();
+            let nameB = b.name.first.toLowerCase();
+            if (nameA < nameB) {
+                return -1;
+            }
+            if (nameA > nameB) {
+                return 1;
+            }
+            return 0;
+        });
+        this.setState({
+            filteredList: results
+        });
+    };
+
+    sortLast = (event) => {
+        event.preventDefault();
+        let results = this.state.employeeList.sort((a, b) => {
+            let nameA = a.name.last.toLowerCase();
+            let nameB = b.name.last.toLowerCase();
+            if (nameA < nameB) {
+                return -1;
+            }
+            if (nameA > nameB) {
+                return 1;
+            }
+            return 0;
+        });
+        this.setState({
+            filteredList: results
+        });
+    };
+
+    sortAge = (event) => {
+        event.preventDefault();
+        let results = this.state.employeeList.sort((a, b) => {
+            let ageA = parseInt(a.dob.age);
+            let ageB = parseInt(b.dob.age);
+            if (ageA < ageB) {
+                return -1;
+            }
+            if (ageA > ageB) {
+                return 1;
+            }
+            return 0;
+        });
+        this.setState({
+            filteredList: results
+        });
+    };
+
     render() {
         return (
             <div className="main">
@@ -70,11 +127,11 @@ class EmployeeContainer extends Component {
                     <thead>
                         <tr>
                             <th>Profile Pic</th>
-                            <th>First Name</th>
-                            <th>Last Name</th>
+                            <th>First Name  <FontAwesomeIcon icon={faSort} onClick={this.sortFirst} /></th>
+                            <th>Last Name  <FontAwesomeIcon icon={faSort} onClick={this.sortLast} /></th>
                             <th>Phone Number</th>
                             <th>Email</th>
-                            <th>Age</th>
+                            <th>Age  <FontAwesomeIcon icon={faSort} onClick={this.sortAge} /></th>
                         </tr>
                     </thead>
                     <tbody>
