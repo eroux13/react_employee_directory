@@ -1,0 +1,12 @@
+thead {
+  text-align: center;
+}
+tbody {
+  text-align: center;
+}
+.clearBtn {
+  float: left;
+}
+.main {
+  background-color: rgb(168, 227, 251);
+}

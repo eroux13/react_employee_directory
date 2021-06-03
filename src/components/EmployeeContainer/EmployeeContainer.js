@@ -58,14 +58,14 @@ class EmployeeContainer extends Component {
 
     render() {
         return (
-            <div>
+            <div className="main">
                 <Header />
                 <Searchbar 
                     search = {this.search}
                     handleFormSubmit = {this.handleFormSubmit}
                     handleInputChange = {this.handleInputChange}
                 />
-                <Button variant="warning" onClick={() => this.setState({ filteredList: this.state.employeeList })}>Clear Search</Button>
+                <Button variant="warning" className="clearBtn" onClick={() => this.setState({ filteredList: this.state.employeeList })}>Clear Search</Button>
                 <Table striped bordered hover variant="dark" responsive="sm">
                     <thead>
                         <tr>

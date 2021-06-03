@@ -13,7 +13,7 @@ function Searchbar(props){
                 placeholder="Search Employees"
                 onChange={props.handleInputChange}
             />
-            <button className="btn btn-primary" onClick={props.handleFromSubmit}>Search</button>
+            <button className="btn btn-primary search" onClick={props.handleFromSubmit}>Search</button>
         </form>
     )
 }
