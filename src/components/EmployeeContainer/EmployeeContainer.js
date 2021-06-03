@@ -15,8 +15,9 @@ import API from "../../utils/API";
 // Import Button Component from react bootstrap
 import {Button} from 'react-bootstrap';
 // Import Icons from FontAwesome to sort names
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faSort } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faSortAlphaDown } from '@fortawesome/free-solid-svg-icons';
+import { faSortNumericDown } from '@fortawesome/free-solid-svg-icons';
 
 class EmployeeContainer extends Component {
     state = {
@@ -127,11 +128,11 @@ class EmployeeContainer extends Component {
                     <thead>
                         <tr>
                             <th>Profile Pic</th>
-                            <th>First Name  <FontAwesomeIcon icon={faSort} onClick={this.sortFirst} /></th>
-                            <th>Last Name  <FontAwesomeIcon icon={faSort} onClick={this.sortLast} /></th>
+                            <th>First Name  <FontAwesomeIcon icon={faSortAlphaDown} onClick={this.sortFirst} /></th>
+                            <th>Last Name  <FontAwesomeIcon icon={faSortAlphaDown} onClick={this.sortLast} /></th>
                             <th>Phone Number</th>
                             <th>Email</th>
-                            <th>Age  <FontAwesomeIcon icon={faSort} onClick={this.sortAge} /></th>
+                            <th>Age  <FontAwesomeIcon icon={faSortNumericDown} onClick={this.sortAge} /></th>
                         </tr>
                     </thead>
                     <tbody>
