@@ -7,6 +7,7 @@ function Searchbar(props){
     return (
         <form>
             <input 
+                className="inputField"
                 value={props.search}
                 name="search"
                 type="text"

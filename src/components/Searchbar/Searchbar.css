@@ -8,3 +8,10 @@ form {
   margin-left: 10px;
   margin-bottom: 10px;
 }
+.inputField {
+  padding: 5px;
+  height: 40px;
+  border-style: none;
+  border-radius: 6px;
+  text-align: center;
+}
