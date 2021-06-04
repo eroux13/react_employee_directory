@@ -1,7 +1,5 @@
 // Import React
 import React from "react";
-// Import Stylesheet
-import "./Employee.css";
 
 function Employee(props){
     return (
