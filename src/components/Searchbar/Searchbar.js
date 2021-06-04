@@ -5,7 +5,7 @@ import "./Searchbar.css";
 
 function Searchbar(props){
     return (
-        <form>
+        <form className="col-lg-12">
             <input 
                 className="inputField"
                 value={props.search}
