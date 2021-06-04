@@ -1,7 +1,7 @@
 form {
   text-align: center;
   float: left;
-  margin-left: 500px;
+  /* margin-left: 40%; */
   margin-right: 10px;
 }
 .search {
@@ -15,4 +15,3 @@ form {
   border-radius: 6px;
   text-align: center;
 }
-/*  */

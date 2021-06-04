@@ -5,9 +5,9 @@ tbody {
   text-align: center;
 }
 .clearBtn {
-  float: left;
+  margin-left: 45%;
+  margin-bottom: 10px;
 }
 .main {
   background-color: rgb(168, 227, 251);
 }
-/*  */
