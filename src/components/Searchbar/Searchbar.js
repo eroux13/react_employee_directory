@@ -14,10 +14,9 @@ function Searchbar(props){
                 placeholder="Search Employees"
                 onChange={props.handleInputChange}
             />
-            <button className="btn btn-primary search" onClick={props.handleFromSubmit}>Search</button>
+            <button className="btn btn-primary search" onClick={props.handleFormSubmit}>Search</button>
         </form>
     )
 }
 
 export default Searchbar;
-// hello

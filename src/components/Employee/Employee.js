@@ -17,4 +17,3 @@ function Employee(props){
 }
 
 export default Employee;
-// hello
