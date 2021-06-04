@@ -1,5 +1,5 @@
 {
-  "homepage": "https://eroux13.github.io/react_employee_directory",
+  "homepage": "https://eroux13.github.io/react_employee_directory/",
   "name": "employee-directory",
   "version": "0.1.2",
   "private": true,
@@ -23,7 +23,7 @@
   },
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "gh-pages -b master -d build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
